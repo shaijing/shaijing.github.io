@@ -2,17 +2,67 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://blog.etamin.xyz/posts/</loc>
-    <lastmod>2022-12-12T10:17:34+08:00</lastmod>
+    <loc>https://blog.etamin.xyz/tags/brew/</loc>
+    <lastmod>2022-12-12T16:09:03+08:00</lastmod>
   </url><url>
-    <loc>https://blog.etamin.xyz/posts/test/</loc>
-    <lastmod>2022-12-12T10:17:34+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.etamin.xyz/</loc>
-    <lastmod>2022-12-12T10:17:34+08:00</lastmod>
+    <loc>https://blog.etamin.xyz/posts/brew/</loc>
+    <lastmod>2022-12-12T16:09:03+08:00</lastmod>
   </url><url>
     <loc>https://blog.etamin.xyz/categories/</loc>
+    <lastmod>2022-12-12T16:09:03+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/tags/macos/</loc>
+    <lastmod>2022-12-12T16:09:03+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/posts/</loc>
+    <lastmod>2022-12-12T16:09:03+08:00</lastmod>
   </url><url>
     <loc>https://blog.etamin.xyz/tags/</loc>
+    <lastmod>2022-12-12T16:09:03+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/</loc>
+    <lastmod>2022-12-12T16:13:30+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/categories/%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2022-12-12T16:09:03+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/tags/gcc/</loc>
+    <lastmod>2022-12-12T16:08:15+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/posts/gcc/</loc>
+    <lastmod>2022-12-12T16:08:15+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/tags/linux/</loc>
+    <lastmod>2022-12-12T16:08:15+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/posts/linux/</loc>
+    <lastmod>2022-12-12T16:07:04+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/posts/oh-my-zsh/</loc>
+    <lastmod>2022-12-12T16:06:46+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/tags/shell/</loc>
+    <lastmod>2022-12-12T16:06:46+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/posts/linux-ssh/</loc>
+    <lastmod>2022-12-12T16:04:00+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/tags/ssh/</loc>
+    <lastmod>2022-12-12T16:04:00+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/about/</loc>
+    <lastmod>2022-12-12T16:13:30+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/tags/camke/</loc>
+    <lastmod>2022-12-12T15:58:27+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/posts/cmake/</loc>
+    <lastmod>2022-12-12T15:58:27+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/tags/git/</loc>
+    <lastmod>2022-12-12T16:01:29+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/posts/git/</loc>
+    <lastmod>2022-12-12T16:01:29+08:00</lastmod>
   </url>
 </urlset>
