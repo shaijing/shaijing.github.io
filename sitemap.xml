@@ -2,37 +2,115 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://blog.etamin.xyz/tags/android/</loc>
+    <lastmod>2023-05-10T13:09:33+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/posts/androidkey/</loc>
+    <lastmod>2023-05-10T13:09:33+08:00</lastmod>
+  </url><url>
     <loc>https://blog.etamin.xyz/categories/</loc>
-    <lastmod>2023-04-23T22:12:04+08:00</lastmod>
+    <lastmod>2023-05-10T13:09:33+08:00</lastmod>
   </url><url>
-    <loc>https://blog.etamin.xyz/tags/endeavouros/</loc>
-    <lastmod>2023-04-23T22:12:04+08:00</lastmod>
+    <loc>https://blog.etamin.xyz/tags/cuda/</loc>
+    <lastmod>2023-05-10T13:03:53+08:00</lastmod>
   </url><url>
-    <loc>https://blog.etamin.xyz/posts/linux/endeavouros/</loc>
-    <lastmod>2023-04-23T22:12:04+08:00</lastmod>
+    <loc>https://blog.etamin.xyz/tags/exe/</loc>
+    <lastmod>2023-05-10T12:51:34+08:00</lastmod>
   </url><url>
-    <loc>https://blog.etamin.xyz/tags/linux/</loc>
-    <lastmod>2023-04-23T22:12:04+08:00</lastmod>
+    <loc>https://blog.etamin.xyz/posts/windows/exe%E6%96%87%E4%BB%B6%E7%AD%BE%E5%90%8D/</loc>
+    <lastmod>2023-05-10T12:51:34+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/tags/ffmpeg/</loc>
+    <lastmod>2023-05-10T13:03:53+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/posts/app/ffmpeg/</loc>
+    <lastmod>2023-05-10T13:03:53+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/tags/https/</loc>
+    <lastmod>2023-05-10T13:07:28+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/tags/kms/</loc>
+    <lastmod>2023-05-10T12:52:08+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/posts/windows/kms/</loc>
+    <lastmod>2023-05-10T12:52:08+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/tags/mkcert/</loc>
+    <lastmod>2023-05-10T13:07:28+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/posts/app/mkcert/</loc>
+    <lastmod>2023-05-10T13:07:28+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/tags/nginx/</loc>
+    <lastmod>2023-05-10T13:06:26+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/tags/office/</loc>
+    <lastmod>2023-05-10T12:52:08+08:00</lastmod>
   </url><url>
     <loc>https://blog.etamin.xyz/posts/</loc>
-    <lastmod>2023-04-23T22:12:04+08:00</lastmod>
+    <lastmod>2023-05-10T13:09:33+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/tags/ssl/</loc>
+    <lastmod>2023-05-10T13:07:28+08:00</lastmod>
   </url><url>
     <loc>https://blog.etamin.xyz/tags/</loc>
-    <lastmod>2023-04-23T22:12:04+08:00</lastmod>
+    <lastmod>2023-05-10T13:09:33+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/posts/app/nginx/</loc>
+    <lastmod>2023-05-10T13:06:26+08:00</lastmod>
   </url><url>
     <loc>https://blog.etamin.xyz/</loc>
-    <lastmod>2023-04-23T22:12:04+08:00</lastmod>
+    <lastmod>2023-05-10T13:09:33+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/tags/tls/</loc>
+    <lastmod>2023-05-10T13:07:28+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/tags/windows/</loc>
+    <lastmod>2023-05-10T12:57:58+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/posts/windows/windows-activate/</loc>
+    <lastmod>2023-05-10T12:55:28+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/posts/windows/%E5%90%AF%E5%8A%A8%E9%A1%B9%E4%BD%8D%E7%BD%AE/</loc>
+    <lastmod>2023-05-10T12:53:31+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/posts/windows/%E6%96%87%E4%BB%B6%E5%A4%B9%E5%9B%BE%E6%A0%87/</loc>
+    <lastmod>2023-05-10T12:57:58+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/posts/windows/com-config/</loc>
+    <lastmod>2023-05-10T12:54:58+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/posts/eyeprotect/</loc>
+    <lastmod>2023-05-10T12:51:00+08:00</lastmod>
   </url><url>
     <loc>https://blog.etamin.xyz/categories/%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2023-04-23T22:12:04+08:00</lastmod>
+    <lastmod>2023-05-10T13:09:33+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/tags/%E5%85%B6%E4%BB%96/</loc>
+    <lastmod>2023-05-10T12:54:58+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/categories/%E5%85%B6%E4%BB%96/</loc>
+    <lastmod>2023-05-10T12:54:58+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/tags/%E6%96%87%E4%BB%B6%E5%A4%B9%E5%9B%BE%E6%A0%87/</loc>
+    <lastmod>2023-05-10T12:57:58+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/tags/%E8%AF%81%E4%B9%A6/</loc>
+    <lastmod>2023-05-10T13:07:28+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/tags/endeavouros/</loc>
+    <lastmod>2023-04-23T22:34:06+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/posts/linux/endeavouros/</loc>
+    <lastmod>2023-04-23T22:34:06+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/tags/linux/</loc>
+    <lastmod>2023-05-10T12:45:44+08:00</lastmod>
   </url><url>
     <loc>https://blog.etamin.xyz/tags/efi/</loc>
     <lastmod>2023-04-23T21:48:12+08:00</lastmod>
   </url><url>
     <loc>https://blog.etamin.xyz/posts/windows/efi/</loc>
-    <lastmod>2023-04-23T21:48:12+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.etamin.xyz/tags/windows/</loc>
     <lastmod>2023-04-23T21:48:12+08:00</lastmod>
   </url><url>
     <loc>https://blog.etamin.xyz/posts/linux/arch-linux/</loc>
@@ -59,7 +137,7 @@
     <loc>https://blog.etamin.xyz/tags/adb/</loc>
     <lastmod>2023-03-25T13:06:03+08:00</lastmod>
   </url><url>
-    <loc>https://blog.etamin.xyz/posts/android/adb%E4%BD%BF%E7%94%A8/</loc>
+    <loc>https://blog.etamin.xyz/posts/app/adb%E4%BD%BF%E7%94%A8/</loc>
     <lastmod>2023-03-25T13:06:03+08:00</lastmod>
   </url><url>
     <loc>https://blog.etamin.xyz/tags/anconda/</loc>
@@ -67,9 +145,6 @@
   </url><url>
     <loc>https://blog.etamin.xyz/posts/app/anconda/</loc>
     <lastmod>2023-03-25T13:15:16+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.etamin.xyz/tags/android/</loc>
-    <lastmod>2023-03-25T13:06:03+08:00</lastmod>
   </url><url>
     <loc>https://blog.etamin.xyz/categories/android/</loc>
     <lastmod>2023-03-25T13:06:03+08:00</lastmod>
@@ -86,10 +161,10 @@
     <loc>https://blog.etamin.xyz/tags/java/</loc>
     <lastmod>2023-03-25T13:14:07+08:00</lastmod>
   </url><url>
-    <loc>https://blog.etamin.xyz/posts/macos/java/</loc>
+    <loc>https://blog.etamin.xyz/posts/app/mac-java/</loc>
     <lastmod>2023-03-25T13:04:04+08:00</lastmod>
   </url><url>
-    <loc>https://blog.etamin.xyz/posts/linux/jdk/</loc>
+    <loc>https://blog.etamin.xyz/posts/app/linux-java/</loc>
     <lastmod>2023-03-25T13:14:07+08:00</lastmod>
   </url><url>
     <loc>https://blog.etamin.xyz/tags/jupyter/</loc>
@@ -132,10 +207,10 @@
     <lastmod>2023-03-25T13:16:00+08:00</lastmod>
   </url><url>
     <loc>https://blog.etamin.xyz/tags/redis/</loc>
-    <lastmod>2023-03-25T13:12:10+08:00</lastmod>
+    <lastmod>2023-05-10T12:48:35+08:00</lastmod>
   </url><url>
-    <loc>https://blog.etamin.xyz/posts/linux/redis/</loc>
-    <lastmod>2023-03-25T13:12:10+08:00</lastmod>
+    <loc>https://blog.etamin.xyz/posts/app/redis/</loc>
+    <lastmod>2023-05-10T12:48:35+08:00</lastmod>
   </url><url>
     <loc>https://blog.etamin.xyz/posts/windows/%E8%BF%9E%E6%8E%A5/</loc>
     <lastmod>2023-04-10T22:10:36+08:00</lastmod>
@@ -143,7 +218,7 @@
     <loc>https://blog.etamin.xyz/tags/brew/</loc>
     <lastmod>2022-12-12T16:09:03+08:00</lastmod>
   </url><url>
-    <loc>https://blog.etamin.xyz/posts/macos/brew/</loc>
+    <loc>https://blog.etamin.xyz/posts/app/brew/</loc>
     <lastmod>2022-12-12T16:09:03+08:00</lastmod>
   </url><url>
     <loc>https://blog.etamin.xyz/tags/macos/</loc>
@@ -156,19 +231,19 @@
     <lastmod>2022-12-12T16:08:15+08:00</lastmod>
   </url><url>
     <loc>https://blog.etamin.xyz/posts/linux/linux/</loc>
-    <lastmod>2022-12-12T16:07:04+08:00</lastmod>
+    <lastmod>2023-05-10T12:44:05+08:00</lastmod>
   </url><url>
     <loc>https://blog.etamin.xyz/posts/app/oh-my-zsh/</loc>
-    <lastmod>2022-12-12T16:06:46+08:00</lastmod>
+    <lastmod>2023-05-10T12:48:16+08:00</lastmod>
   </url><url>
     <loc>https://blog.etamin.xyz/tags/shell/</loc>
-    <lastmod>2022-12-12T16:06:46+08:00</lastmod>
+    <lastmod>2023-05-10T12:48:16+08:00</lastmod>
   </url><url>
-    <loc>https://blog.etamin.xyz/posts/linux/linux-ssh/</loc>
-    <lastmod>2022-12-12T16:04:00+08:00</lastmod>
+    <loc>https://blog.etamin.xyz/posts/app/centos-ssh/</loc>
+    <lastmod>2023-05-10T12:45:44+08:00</lastmod>
   </url><url>
     <loc>https://blog.etamin.xyz/tags/ssh/</loc>
-    <lastmod>2022-12-12T16:04:00+08:00</lastmod>
+    <lastmod>2023-05-10T12:45:44+08:00</lastmod>
   </url><url>
     <loc>https://blog.etamin.xyz/about/</loc>
     <lastmod>2023-03-25T13:26:27+08:00</lastmod>
@@ -184,5 +259,29 @@
   </url><url>
     <loc>https://blog.etamin.xyz/posts/app/git/</loc>
     <lastmod>2022-12-12T16:01:29+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/posts/app/matlab/</loc>
+    <lastmod>2023-05-10T12:37:36+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/posts/app/texlive/</loc>
+    <lastmod>2023-03-28T06:47:07+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/posts/app/vimrc/</loc>
+    <lastmod>2023-03-21T18:59:10+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/posts/learn/%E6%B1%87%E7%BC%96/</loc>
+    <lastmod>2022-12-29T18:07:47+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/posts/linux/centos-stream/</loc>
+    <lastmod>2023-03-27T22:36:23+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/posts/linux/ssh_file_transfer/</loc>
+    <lastmod>2022-02-21T10:09:40+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/posts/linux/yum/</loc>
+    <lastmod>2023-05-10T12:44:43+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/posts/windows/wsl/</loc>
+    <lastmod>2023-04-17T10:42:55+08:00</lastmod>
   </url>
 </urlset>
