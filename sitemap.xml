@@ -2,13 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://blog.etamin.xyz/posts/math/lingo/</loc>
+    <lastmod>2023-05-17T15:54:46+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/posts/</loc>
+    <lastmod>2023-05-17T15:54:46+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/</loc>
+    <lastmod>2023-05-17T15:54:46+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/tags/cargo/</loc>
+    <lastmod>2023-05-17T15:03:11+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/categories/</loc>
+    <lastmod>2023-05-17T15:03:11+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/tags/rust/</loc>
+    <lastmod>2023-05-17T15:03:11+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/posts/learn/rust/</loc>
+    <lastmod>2023-05-17T15:03:11+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/tags/</loc>
+    <lastmod>2023-05-17T15:03:11+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/categories/%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2023-05-17T15:03:11+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/posts/windows/scoop/</loc>
+    <lastmod>2023-05-14T20:59:43+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/tags/windows/</loc>
+    <lastmod>2023-05-14T20:59:43+08:00</lastmod>
+  </url><url>
     <loc>https://blog.etamin.xyz/tags/android/</loc>
     <lastmod>2023-05-10T13:09:33+08:00</lastmod>
   </url><url>
     <loc>https://blog.etamin.xyz/posts/androidkey/</loc>
-    <lastmod>2023-05-10T13:09:33+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.etamin.xyz/categories/</loc>
     <lastmod>2023-05-10T13:09:33+08:00</lastmod>
   </url><url>
     <loc>https://blog.etamin.xyz/tags/cuda/</loc>
@@ -47,26 +77,14 @@
     <loc>https://blog.etamin.xyz/tags/office/</loc>
     <lastmod>2023-05-10T12:52:08+08:00</lastmod>
   </url><url>
-    <loc>https://blog.etamin.xyz/posts/</loc>
-    <lastmod>2023-05-10T13:09:33+08:00</lastmod>
-  </url><url>
     <loc>https://blog.etamin.xyz/tags/ssl/</loc>
     <lastmod>2023-05-10T13:07:28+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.etamin.xyz/tags/</loc>
-    <lastmod>2023-05-10T13:09:33+08:00</lastmod>
   </url><url>
     <loc>https://blog.etamin.xyz/posts/app/nginx/</loc>
     <lastmod>2023-05-10T13:06:26+08:00</lastmod>
   </url><url>
-    <loc>https://blog.etamin.xyz/</loc>
-    <lastmod>2023-05-10T13:09:33+08:00</lastmod>
-  </url><url>
     <loc>https://blog.etamin.xyz/tags/tls/</loc>
     <lastmod>2023-05-10T13:07:28+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.etamin.xyz/tags/windows/</loc>
-    <lastmod>2023-05-10T12:57:58+08:00</lastmod>
   </url><url>
     <loc>https://blog.etamin.xyz/posts/windows/windows-activate/</loc>
     <lastmod>2023-05-10T12:55:28+08:00</lastmod>
@@ -82,9 +100,6 @@
   </url><url>
     <loc>https://blog.etamin.xyz/posts/eyeprotect/</loc>
     <lastmod>2023-05-10T12:51:00+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.etamin.xyz/categories/%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2023-05-10T13:09:33+08:00</lastmod>
   </url><url>
     <loc>https://blog.etamin.xyz/tags/%E5%85%B6%E4%BB%96/</loc>
     <lastmod>2023-05-10T12:54:58+08:00</lastmod>
@@ -141,10 +156,10 @@
     <lastmod>2023-03-25T13:06:03+08:00</lastmod>
   </url><url>
     <loc>https://blog.etamin.xyz/tags/anconda/</loc>
-    <lastmod>2023-03-25T13:15:16+08:00</lastmod>
+    <lastmod>2023-05-10T23:06:14+08:00</lastmod>
   </url><url>
     <loc>https://blog.etamin.xyz/posts/app/anconda/</loc>
-    <lastmod>2023-03-25T13:15:16+08:00</lastmod>
+    <lastmod>2023-05-10T23:06:14+08:00</lastmod>
   </url><url>
     <loc>https://blog.etamin.xyz/categories/android/</loc>
     <lastmod>2023-03-25T13:06:03+08:00</lastmod>
@@ -204,7 +219,7 @@
     <lastmod>2023-03-25T13:16:00+08:00</lastmod>
   </url><url>
     <loc>https://blog.etamin.xyz/tags/python/</loc>
-    <lastmod>2023-03-25T13:16:00+08:00</lastmod>
+    <lastmod>2023-05-10T23:06:14+08:00</lastmod>
   </url><url>
     <loc>https://blog.etamin.xyz/tags/redis/</loc>
     <lastmod>2023-05-10T12:48:35+08:00</lastmod>
