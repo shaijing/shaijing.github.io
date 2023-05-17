@@ -2,28 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://blog.etamin.xyz/categories/</loc>
+    <lastmod>2023-05-17T16:18:51+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/tags/lingo/</loc>
+    <lastmod>2023-05-17T16:18:51+08:00</lastmod>
+  </url><url>
     <loc>https://blog.etamin.xyz/posts/math/lingo/</loc>
-    <lastmod>2023-05-17T15:54:46+08:00</lastmod>
+    <lastmod>2023-05-17T16:18:51+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/tags/math/</loc>
+    <lastmod>2023-05-17T16:18:51+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/categories/math/</loc>
+    <lastmod>2023-05-17T16:18:51+08:00</lastmod>
   </url><url>
     <loc>https://blog.etamin.xyz/posts/</loc>
-    <lastmod>2023-05-17T15:54:46+08:00</lastmod>
+    <lastmod>2023-05-17T16:18:51+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.etamin.xyz/tags/</loc>
+    <lastmod>2023-05-17T16:18:51+08:00</lastmod>
   </url><url>
     <loc>https://blog.etamin.xyz/</loc>
-    <lastmod>2023-05-17T15:54:46+08:00</lastmod>
+    <lastmod>2023-05-17T16:18:51+08:00</lastmod>
   </url><url>
     <loc>https://blog.etamin.xyz/tags/cargo/</loc>
-    <lastmod>2023-05-17T15:03:11+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.etamin.xyz/categories/</loc>
     <lastmod>2023-05-17T15:03:11+08:00</lastmod>
   </url><url>
     <loc>https://blog.etamin.xyz/tags/rust/</loc>
     <lastmod>2023-05-17T15:03:11+08:00</lastmod>
   </url><url>
     <loc>https://blog.etamin.xyz/posts/learn/rust/</loc>
-    <lastmod>2023-05-17T15:03:11+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.etamin.xyz/tags/</loc>
     <lastmod>2023-05-17T15:03:11+08:00</lastmod>
   </url><url>
     <loc>https://blog.etamin.xyz/categories/%E6%95%99%E7%A8%8B/</loc>
