@@ -10,7 +10,7 @@
         <title>The Rain Pavilion</title>
         <link>https://blog.etamin.xyz/</link>
         <description>MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</description>
-        <generator>Hugo 0.111.3 https://gohugo.io/</generator>
+        <generator>Hugo 0.114.0 https://gohugo.io/</generator>
         
             <language>zh-CN</language>
         
@@ -23,10 +23,168 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
         
-        <lastBuildDate>Wed, 17 May 2023 16:19:07 &#43;0800</lastBuildDate>
+        <lastBuildDate>Fri, 23 Jun 2023 08:49:25 &#43;0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://blog.etamin.xyz/rss.xml" />
         
+        
+            <item>
+                <title>Sql</title>
+                <link>https://blog.etamin.xyz/posts/sql/</link>
+                <guid isPermaLink="true">https://blog.etamin.xyz/posts/sql/</guid>
+                <pubDate>Fri, 23 Jun 2023 08:10:57 &#43;0800</pubDate>
+                
+                    <author>yulingsc@outlook.com (Ling Yu)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+                
+                    <description>&lt;h1 id=&#34;数据库知识点整理&#34;&gt;数据库知识点整理&lt;/h1&gt;
+&lt;h2 id=&#34;1-基础&#34;&gt;1. 基础&lt;/h2&gt;
+&lt;p&gt;函数依赖的概念：设$R&lt;U&gt;$是属性集$U$上的关系模式，$X,Y \subseteq U$，若对于$R&lt;U&gt;$的任意一个可能关系$r$，$r$中有两个元组$t_1$和$t_2$，若$t_1[X]=t_2[X]$，则必有$t_1[Y]=t_2[Y]$，则称$Y$函数依赖于$X$，记作$X \rightarrow Y$。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;x唯一决定元组时，y函数依赖于x&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在$R&lt;U&gt;$中，如果$X \rightarrow Y$，并且对于$X$的任意一个真子集$X&#39;$，都有$X&#39; \nrightarrow Y$，则称$Y$对$X$完全函数依赖，记作：$X \xrightarrow{F}Y$；若$X \rightarrow Y$，但是$Y$不完全函数依赖于$X$，则称$Y$对$X$部分函数依赖，记作：$X \xrightarrow{P} Y$。&lt;/p&gt;
+&lt;p&gt;在$R&lt;U&gt;$中，如果$X \rightarrow Y,\quad (Y \nsubseteq X),Y \nrightarrow X,Y\rightarrow Z$，则称$Z$对$X$传递函数依赖，记作：$X \xrightarrow{传递} Z$。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;键字=码字，所以 主键=主码=主关键字，候选键=候选码=候选关键字…&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;码（superkey）：即能唯一标识元组的属性或属性组，称为码。&lt;/li&gt;
+&lt;li&gt;候选码（candidate key）：能够唯一标识一条记录的最小属性集，即不含有多余属性的码称为候选码。&lt;/li&gt;
+&lt;li&gt;主码（primary key）：某个能够唯一标识一条记录的最小属性集，即在候选码的基础上，选择一个作为主码。&lt;/li&gt;
+&lt;li&gt;主属性：包含在任一候选码中的属性称为主属性。简单来说，主属性是候选码所有属性的并集。&lt;/li&gt;
+&lt;li&gt;非主属性：不包含在任一候选码中的属性称为非主属性。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;2-范式&#34;&gt;2. 范式&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;第一范式（1NF）：关系模式$R$，其所有属性不可再分，即属性不可再分成更小的属性。&lt;/li&gt;
+&lt;li&gt;第二范式（2NF）：$R \in 1NF$,且每一个非主属性完全依赖于码，而不能部分依赖于码。&lt;/li&gt;
+&lt;li&gt;第三范式（3NF）：$R \in 2NF$,且非主属性不传递依赖于码。&lt;/li&gt;
+&lt;li&gt;BCNF：在第三范式的基础上，消除主属性对候选码的部分函数依赖。&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+                
+                
+                
+                    
+                    
+                    
+                        
+                        
+                        
+                            
+                                <category domain="https://blog.etamin.xyz/posts/">posts\</category>
+                            
+                        
+                    
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://blog.etamin.xyz/categories/%E5%AD%A6%E4%B9%A0/">学习</category>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://blog.etamin.xyz/tags/sql/">sql</category>
+                                
+                            
+                        
+                    
+                
+            </item>
+        
+            <item>
+                <title>Xifalu</title>
+                <link>https://blog.etamin.xyz/posts/live/xifalu/</link>
+                <guid isPermaLink="true">https://blog.etamin.xyz/posts/live/xifalu/</guid>
+                <pubDate>Fri, 19 May 2023 14:41:59 &#43;0800</pubDate>
+                
+                    <author>yulingsc@outlook.com (Ling Yu)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+                
+                    <description>&lt;h2 id=&#34;去屑杀菌剂&#34;&gt;去屑杀菌剂&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;水杨酸 加速头皮的一些废旧物质的脱落&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;吡罗克酮乙醇胺盐&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;吡硫鍮錦（ZPT）（有风险）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;吡硫鎓锌&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;氯咪巴唑&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;酮康唑洗剂、&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;二硫化硒洗剂、&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;煤焦油洗剂&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;防腐剂&#34;&gt;防腐剂&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;甲基异噻唑啉酮&lt;/li&gt;
+&lt;li&gt;甲基氯异噻唑啉酮&lt;/li&gt;
+&lt;li&gt;DMDM 乙内酰脲&lt;/li&gt;
+&lt;li&gt;咪唑烷基脲&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+                
+                
+                
+                    
+                    
+                    
+                        
+                        
+                        
+                    
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://blog.etamin.xyz/categories/%E7%94%9F%E6%B4%BB/">生活</category>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://blog.etamin.xyz/tags/live/">live</category>
+                                
+                            
+                        
+                    
+                
+            </item>
         
             <item>
                 <title>Lingo</title>
@@ -1267,143 +1425,6 @@ keytool -importkeystore -srckeystore 127.0.0.1.p12 -srcstoretype pkcs12 -destkey
                                 
                                 
                                     <category domain="https://blog.etamin.xyz/tags/%E8%AF%81%E4%B9%A6/">证书</category>
-                                
-                            
-                        
-                    
-                
-            </item>
-        
-            <item>
-                <title>Test</title>
-                <link>https://blog.etamin.xyz/posts/app/nginx/</link>
-                <guid isPermaLink="true">https://blog.etamin.xyz/posts/app/nginx/</guid>
-                <pubDate>Wed, 10 May 2023 12:50:26 &#43;0800</pubDate>
-                
-                    <author>yulingsc@outlook.com (Ling Yu)</author>
-                
-                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
-                
-                    <description>&lt;h1 id=&#34;nginx命令&#34;&gt;nginx命令&lt;/h1&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;nginx&lt;/span&gt; &lt;span class=&#34;c&#34;&gt;#启动&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;nginx&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-s&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;reload&lt;/span&gt; &lt;span class=&#34;c&#34;&gt;# 重新载入配置文件&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;nginx&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-s&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;reopen&lt;/span&gt; &lt;span class=&#34;c&#34;&gt;# 重启 Nginx&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;nginx&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-s&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;stop&lt;/span&gt; &lt;span class=&#34;c&#34;&gt;# 停止 Nginx&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;location&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;root&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;var&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ftp&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;pub&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;/;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;autoindex&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;on&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;c&#34;&gt;# 显示目录&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;autoindex_exact_size&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;off&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;c&#34;&gt;# 显示文件大小 #默认为 on 显示出文件的确切大小，单位是 bytes&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;　　　　　　　　　&lt;/span&gt; &lt;span class=&#34;c&#34;&gt;#改为 off 后，显示出文件的大概大小，单位是 kB 或者 MB 或者 GB&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;autoindex_localtime&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;on&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;c&#34;&gt;# 显示文件时间 #默认为 off，显示的文件时间为 GMT 时间 #改为 on 后，显示的文件时间为文件的服务器时间&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;charset&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;utf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;8&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;gbk&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;c&#34;&gt;#解决中文乱码问题&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description>
-                
-                
-                
-                    
-                    
-                    
-                        
-                        
-                        
-                    
-                
-                
-                
-                    
-                        
-                            
-                                
-                                
-                                
-                                    <category domain="https://blog.etamin.xyz/categories/%E6%95%99%E7%A8%8B/">教程</category>
-                                
-                            
-                        
-                    
-                        
-                            
-                                
-                                
-                                
-                                    <category domain="https://blog.etamin.xyz/tags/nginx/">nginx</category>
-                                
-                            
-                        
-                    
-                
-            </item>
-        
-            <item>
-                <title>windows-active-key</title>
-                <link>https://blog.etamin.xyz/posts/windows/windows-activate/</link>
-                <guid isPermaLink="true">https://blog.etamin.xyz/posts/windows/windows-activate/</guid>
-                <pubDate>Wed, 10 May 2023 12:50:26 &#43;0800</pubDate>
-                
-                    <author>yulingsc@outlook.com (Ling Yu)</author>
-                
-                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
-                
-                    <description>&lt;p&gt;2、通过微软的免费升级计划升级到Windows 10的家庭版或者专业版的激活密钥是下面这两个不要换成其他：
-Windows 10 专业版：&lt;/p&gt;
-&lt;p&gt;VK7JG-NPHTM-C97JM-9MPGT-3V66T （统一密钥，仅供升级用户使用）&lt;/p&gt;
-&lt;p&gt;W269N-WFGWX-YVC9B-4J6C9-T83GX&lt;/p&gt;
-&lt;p&gt;NYW94-47Q7H-7X9TT-W7TXD-JTYPM&lt;/p&gt;
-&lt;p&gt;NJ4MX-VQQ7Q-FP3DB-VDGHX-7XM87&lt;/p&gt;
-&lt;p&gt;MH37W-N47XK-V7XM9-C7227-GCQG9&lt;/p&gt;
-&lt;p&gt;Windows 10 家庭版：YTMG3-N6DKC-DKB77-7M9GH-8HVX7（统一密钥，仅供升级用户使用&lt;/p&gt;
-</description>
-                
-                
-                
-                    
-                    
-                    
-                        
-                        
-                        
-                    
-                
-                
-                
-                    
-                        
-                            
-                                
-                                
-                                
-                                    <category domain="https://blog.etamin.xyz/categories/%E6%95%99%E7%A8%8B/">教程</category>
-                                
-                            
-                        
-                    
-                        
-                            
-                                
-                                
-                                
-                                    <category domain="https://blog.etamin.xyz/tags/windows/">windows</category>
                                 
                             
                         
