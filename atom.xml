@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">The Rain Pavilion</title>
     <subtitle type="html">MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</subtitle>
-    <updated>2023-06-23T08:49:25&#43;08:00</updated>
+    <updated>2023-07-29T15:20:18&#43;08:00</updated>
     <id>https://blog.etamin.xyz/</id>
     <link rel="alternate" type="text/html" href="https://blog.etamin.xyz/" />
     <link rel="self" type="application/atom&#43;xml" href="https://blog.etamin.xyz/atom.xml" />
@@ -15,12 +15,476 @@
                 <email>yulingsc@outlook.com</email>
             </author>
     <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights>
-    <generator uri="https://gohugo.io/" version="0.114.0">Hugo</generator>
+    <generator uri="https://gohugo.io/" version="0.115.4">Hugo</generator>
+        <entry>
+            <title type="text">Arch Linux</title>
+            <link rel="alternate" type="text/html" href="https://blog.etamin.xyz/posts/linux/centos-stream/" />
+            <id>https://blog.etamin.xyz/posts/linux/centos-stream/</id>
+            <updated>2023-07-29T09:10:06&#43;08:00</updated>
+            <published>2023-07-29T13:14:36&#43;08:00</published>
+            <author>
+                    <name>Ling Yu</name>
+                    <uri>https://blog.etamin.xyz/</uri>
+                    <email>yulingsc@outlook.com</email>
+                    </author>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">启用epel-release源 1 2 3 4 5 6 7 8 9 10 11 12 13 14 # centos 9 stream 版本 dnf config-manager --set-enabled crb dnf install epel-release……</summary>
+            
+                <content type="html">&lt;h2 id=&#34;启用epel-release源&#34;&gt;启用epel-release源&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# centos 9 stream 版本&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;dnf config-manager --set-enabled crb
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;dnf install epel-release epel-next-release
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# RHEL 9.0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;subscription-manager repos --enable codeready-builder-for-rhel-9-&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;arch&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;-rpms
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# AlmaLinux 9&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;dnf config-manager --set-enabled crb
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;dnf install epel-release
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content>
+            
+            
+            
+                
+                
+                
+                    
+                    
+                    
+                
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://blog.etamin.xyz/categories/linux/" term="linux" label="linux" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://blog.etamin.xyz/tags/centos/" term="centos" label="centos" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://blog.etamin.xyz/tags/linux/" term="linux" label="linux" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
+            <title type="text">debian linux</title>
+            <link rel="alternate" type="text/html" href="https://blog.etamin.xyz/posts/linux/debian/" />
+            <id>https://blog.etamin.xyz/posts/linux/debian/</id>
+            <updated>2023-07-29T09:46:15&#43;08:00</updated>
+            <published>2023-07-29T13:14:36&#43;08:00</published>
+            <author>
+                    <name>Ling Yu</name>
+                    <uri>https://blog.etamin.xyz/</uri>
+                    <email>yulingsc@outlook.com</email>
+                    </author>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">debian安装后工作 添加sudo权限 1 2 3 4 5 6 7 8 su - root chmod 666 /etc/sudoers vim /etc/sudoers # 在root下……</summary>
+            
+                <content type="html">&lt;h1 id=&#34;debian安装后工作&#34;&gt;debian安装后工作&lt;/h1&gt;
+&lt;h2 id=&#34;添加sudo权限&#34;&gt;添加sudo权限&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;su - root
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;chmod &lt;span class=&#34;m&#34;&gt;666&lt;/span&gt; /etc/sudoers
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;vim /etc/sudoers
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 在root下添加&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;username&amp;gt; &lt;span class=&#34;nv&#34;&gt;ALL&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=(&lt;/span&gt;ALL:ALL&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; NOPASSWD:ALL
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# :wq&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;chmod &lt;span class=&#34;m&#34;&gt;440&lt;/span&gt; /etc/sudoers
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;exit&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;winlinux双系统时间设置&#34;&gt;win,linux双系统时间设置&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;系统时间与硬件时间&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Linux系统中有两个时间概念，系统时间与硬件时间。&lt;/p&gt;
+&lt;p&gt;硬件时间就是BIOS中的时间，视为UTC 0时区，可以用hwclock来查看硬件时间。&lt;/p&gt;
+&lt;p&gt;系统时间即用date命令查看到的时间，这个时间是系统通过读取BIOS时间并根据系统中的设定的时区来确定的。&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;修改/etc/adjtime&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;将BIOS时间视为本地时间，关闭debian中的UTC选项。很多文章提到修改/etc/default/rcS中的UTC=no，这是debian 6的设置方法，而debian12中将这个选项放在了/etc/adjtime文件中，若没有这个文件，可用命令 $sudo hwclock --adjust 来生成。然后将第三行由UTC改为LOCAL。&lt;/p&gt;
+</content>
+            
+            
+            
+                
+                
+                
+                    
+                    
+                    
+                
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://blog.etamin.xyz/categories/linux/" term="linux" label="linux" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://blog.etamin.xyz/tags/debian/" term="debian" label="debian" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://blog.etamin.xyz/tags/linux/" term="linux" label="linux" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
+            <title type="text">scp</title>
+            <link rel="alternate" type="text/html" href="https://blog.etamin.xyz/posts/linux/ssh_file_transfer/" />
+            <id>https://blog.etamin.xyz/posts/linux/ssh_file_transfer/</id>
+            <updated>2023-07-29T09:18:06&#43;08:00</updated>
+            <published>2023-07-29T12:32:46&#43;08:00</published>
+            <author>
+                    <name>Ling Yu</name>
+                    <uri>https://blog.etamin.xyz/</uri>
+                    <email>yulingsc@outlook.com</email>
+                    </author>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">命令格式 1 $ scp &amp;lt;sourceFile&amp;gt; &amp;lt;targetFile&amp;gt; 常用格式 -P [port] : 指定SSH端口号 -r : 递归复制整个目录</summary>
+            
+                <content type="html">&lt;h1 id=&#34;命令格式&#34;&gt;命令格式&lt;/h1&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gp&#34;&gt;$&lt;/span&gt; scp &amp;lt;sourceFile&amp;gt; &amp;lt;targetFile&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;常用格式&#34;&gt;常用格式&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;-P [port] : 指定SSH端口号&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;-r : 递归复制整个目录&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+            
+            
+            
+                
+                
+                
+                    
+                    
+                    
+                
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://blog.etamin.xyz/categories/linux/" term="linux" label="linux" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://blog.etamin.xyz/tags/scp/" term="scp" label="scp" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://blog.etamin.xyz/tags/ssh/" term="ssh" label="ssh" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
+            <title type="text">yum dnf</title>
+            <link rel="alternate" type="text/html" href="https://blog.etamin.xyz/posts/linux/yum/" />
+            <id>https://blog.etamin.xyz/posts/linux/yum/</id>
+            <updated>2023-07-29T09:19:46&#43;08:00</updated>
+            <published>2023-07-29T12:32:46&#43;08:00</published>
+            <author>
+                    <name>Ling Yu</name>
+                    <uri>https://blog.etamin.xyz/</uri>
+                    <email>yulingsc@outlook.com</email>
+                    </author>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">清除系统yum缓存，并重新生成新的yum缓存 1 2 3 4 dnf -y install epel-release dnf clean all dnf makecache dnf repolist</summary>
+            
+                <content type="html">&lt;h1 id=&#34;清除系统yum缓存并重新生成新的yum缓存&#34;&gt;清除系统yum缓存，并重新生成新的yum缓存&lt;/h1&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;dnf -y install epel-release
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;dnf clean all
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;dnf makecache
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;dnf repolist
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content>
+            
+            
+            
+                
+                
+                
+                    
+                    
+                    
+                
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://blog.etamin.xyz/categories/linux/" term="linux" label="linux" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://blog.etamin.xyz/tags/package-manner/" term="package manner" label="package manner" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
+            <title type="text">nala</title>
+            <link rel="alternate" type="text/html" href="https://blog.etamin.xyz/posts/linux/nala/" />
+            <id>https://blog.etamin.xyz/posts/linux/nala/</id>
+            <updated>2023-07-29T09:20:11&#43;08:00</updated>
+            <published>2023-07-29T09:02:56&#43;08:00</published>
+            <author>
+                    <name>Ling Yu</name>
+                    <uri>https://blog.etamin.xyz/</uri>
+                    <email>yulingsc@outlook.com</email>
+                    </author>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">Nala介绍 1 Nala 包管理器的关键功能之一是nala History命令，它改变了我个人对……</summary>
+            
+                <content type="html">&lt;h1 id=&#34;nala介绍-1&#34;&gt;Nala介绍 &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;https://blog.etamin.xyz/posts/linux/nala/#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/h1&gt;
+&lt;p&gt;Nala 包管理器的关键功能之一是nala History命令，它改变了我个人对在 APT 上使用它的想法，它类似于您在基于 RedHat 的系统（如Fedora）中找到的dnf History命令。
+该命令在/var/lib/nala/history.jsonnala history中记录每个事务的日志，稍后可用于撤消或重做更改。&lt;/p&gt;
+&lt;h2 id=&#34;在-linux-上安装-nala&#34;&gt;在 Linux 上安装 Nala&lt;/h2&gt;
+&lt;h3 id=&#34;从官方存储库安装-nala-debian12&#34;&gt;从官方存储库安装 Nala [Debian12]&lt;/h3&gt;
+&lt;p&gt;如果系统运行的是Debian12, Ubuntu 22.04 或 Ubuntu-derviaties，您可以通过执行如下所示的一行命令来快速安装 Nala：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt install nala
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;添加自定义存储库推荐&#34;&gt;添加自定义存储库[推荐]&lt;/h3&gt;
+&lt;p&gt;这是在运行旧版本 Ubuntu 或 Debian 的计算机上安装 Nala 的首选且最简单的方法，因此您所要做的就是按照下面列出的步骤按列出的顺序进行操作。&lt;/p&gt;
+&lt;p&gt;将以下命令复制并粘贴到系统的终端中以添加Volian Scar 存储库，稍后您可以从中安装 Nala。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;deb [arch=amd64,arm64,armhf] http://deb.volian.org/volian/ scar main&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; sudo tee /etc/apt/sources.list.d/volian-archive-scar-unstable.list
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;接下来，添加GPG密钥进行验证，如下所示：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;wget -qO - https://deb.volian.org/volian/scar.key &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; sudo tee /etc/apt/trusted.gpg.d/volian-archive-scar-unstable.gpg &amp;gt; /dev/null
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;对于 Ubuntu 22.04/Debian 及更高版本，您需要执行以下命令，这将首先更新您的系统存储库，然后安装nala。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt update &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt install nala -y
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;如果您使用的是 Ubuntu 21.04 或 Debian Stable 等旧版本，那么您应该调用以下命令，该命令将安装： nala-legacy&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt update &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt install nala-legacy
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;使用-pacstall-安装-nala-包管理器&#34;&gt;使用 Pacstall 安装 Nala 包管理器&lt;/h3&gt;
+&lt;h3 id=&#34;使用-debian-软件包安装-nala-软件包管理器&#34;&gt;使用 Debian 软件包安装 Nala 软件包管理器&lt;/h3&gt;
+&lt;p&gt;如果您不喜欢上述方法，那么您还可以&lt;a href=&#34;https://gitlab.com/volian/nala/-/releases&#34;&gt;下载&lt;/a&gt;“deb”包并使用apt或dpkg命令在本地安装，无需互联网连接。&lt;/p&gt;
+&lt;p&gt;从发布页面下载软件包后，您可以执行以下任意命令来安装 Nala：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt install /path/to/nala_version_arch.deb
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#OR&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo dpkg -i /path/to/nala_version_arch.deb
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt install -f
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;https://trendoceans.com/nala-package-manager/&#34;&gt;https://trendoceans.com/nala-package-manager/&lt;/a&gt;&amp;#160;&lt;a href=&#34;https://blog.etamin.xyz/posts/linux/nala/#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</content>
+            
+            
+            
+                
+                
+                
+                    
+                    
+                    
+                
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://blog.etamin.xyz/categories/linux/" term="linux" label="linux" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://blog.etamin.xyz/tags/linux/" term="linux" label="linux" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://blog.etamin.xyz/tags/nala/" term="nala" label="nala" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://blog.etamin.xyz/tags/package-manner/" term="package manner" label="package manner" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
         <entry>
             <title type="text">Sql</title>
-            <link rel="alternate" type="text/html" href="https://blog.etamin.xyz/posts/sql/" />
-            <id>https://blog.etamin.xyz/posts/sql/</id>
-            <updated>2023-06-23T08:45:09&#43;08:00</updated>
+            <link rel="alternate" type="text/html" href="https://blog.etamin.xyz/posts/learn/sql/" />
+            <id>https://blog.etamin.xyz/posts/learn/sql/</id>
+            <updated>2023-07-29T09:30:26&#43;08:00</updated>
             <published>2023-06-23T08:10:57&#43;08:00</published>
             <author>
                     <name>Ling Yu</name>
@@ -63,10 +527,6 @@
                     
                     
                     
-                        
-                            <category scheme="https://blog.etamin.xyz/posts/" term="posts\" label="posts\" />
-                        
-                    
                 
             
             
@@ -77,7 +537,7 @@
                             
                             
                             
-                                <category scheme="https://blog.etamin.xyz/categories/%E5%AD%A6%E4%B9%A0/" term="学习" label="学习" />
+                                <category scheme="https://blog.etamin.xyz/categories/learn/" term="learn" label="learn" />
                             
                         
                     
@@ -463,10 +923,81 @@ end
         </entry>
     
         <entry>
+            <title type="text">matlab</title>
+            <link rel="alternate" type="text/html" href="https://blog.etamin.xyz/posts/app/matlab/" />
+            <id>https://blog.etamin.xyz/posts/app/matlab/</id>
+            <updated>2023-07-29T09:26:54&#43;08:00</updated>
+            <published>2023-05-17T12:42:14&#43;08:00</published>
+            <author>
+                    <name>Ling Yu</name>
+                    <uri>https://blog.etamin.xyz/</uri>
+                    <email>yulingsc@outlook.com</email>
+                    </author>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">Matlab技巧 1. Matlab打开命令行窗口 1 matlab -nosplash -nodesktop 2. Matlab命令行运行脚本 运行……</summary>
+            
+                <content type="html">&lt;h1 id=&#34;matlab技巧&#34;&gt;Matlab技巧&lt;/h1&gt;
+&lt;h2 id=&#34;1-matlab打开命令行窗口&#34;&gt;1. Matlab打开命令行窗口&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-matlab&#34; data-lang=&#34;matlab&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;matlab&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;nosplash&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;nodesktop&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;2-matlab命令行运行脚本&#34;&gt;2. Matlab命令行运行脚本&lt;/h2&gt;
+&lt;p&gt;运行当前目录demo.m文件&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-matlab&#34; data-lang=&#34;matlab&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;matlab&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;nosplash&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;nodesktop&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;sd&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;g&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;\&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;wk&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;r&lt;/span&gt; &amp;#34;&lt;span class=&#34;n&#34;&gt;run&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#39;.\demo.m&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content>
+            
+            
+            
+                
+                
+                
+                    
+                    
+                    
+                
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://blog.etamin.xyz/categories/app/" term="app" label="app" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://blog.etamin.xyz/tags/matlab/" term="matlab" label="matlab" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
             <title type="text">Rust</title>
             <link rel="alternate" type="text/html" href="https://blog.etamin.xyz/posts/learn/rust/" />
             <id>https://blog.etamin.xyz/posts/learn/rust/</id>
-            <updated>2023-05-17T15:03:11&#43;08:00</updated>
+            <updated>2023-07-29T09:22:57&#43;08:00</updated>
             <published>2023-05-17T12:42:14&#43;08:00</published>
             <author>
                     <name>Ling Yu</name>
@@ -678,7 +1209,7 @@ cargo udeps(第三方): 检查项目中未使用的依赖&lt;/p&gt;
                             
                             
                             
-                                <category scheme="https://blog.etamin.xyz/categories/%E6%95%99%E7%A8%8B/" term="教程" label="教程" />
+                                <category scheme="https://blog.etamin.xyz/categories/learn/" term="learn" label="learn" />
                             
                         
                     
@@ -695,754 +1226,6 @@ cargo udeps(第三方): 检查项目中未使用的依赖&lt;/p&gt;
                             
                             
                                 <category scheme="https://blog.etamin.xyz/tags/cargo/" term="cargo" label="cargo" />
-                            
-                        
-                    
-                
-            
-        </entry>
-    
-        <entry>
-            <title type="text">Scoop</title>
-            <link rel="alternate" type="text/html" href="https://blog.etamin.xyz/posts/windows/scoop/" />
-            <id>https://blog.etamin.xyz/posts/windows/scoop/</id>
-            <updated>2023-05-14T20:59:43&#43;08:00</updated>
-            <published>2023-05-14T20:56:23&#43;08:00</published>
-            <author>
-                    <name>Ling Yu</name>
-                    <uri>https://blog.etamin.xyz/</uri>
-                    <email>yulingsc@outlook.com</email>
-                    </author>
-            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">scoop安装 设置scoop安装目录 1 2 3 $env:SCOOP=&amp;#39;D:\ProgramData\scoop&amp;#39; # 先添加用户级别的环境变量 SCOOP [environment]::setEnvironmentVariable(&amp;#39;SCOOP&amp;#39;,$env:SCOOP,&amp;#39;User&amp;#39;) 安装sco……</summary>
-            
-                <content type="html">&lt;h1 id=&#34;scoop安装&#34;&gt;scoop安装&lt;/h1&gt;
-&lt;h2 id=&#34;设置scoop安装目录&#34;&gt;设置scoop安装目录&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;$env:SCOOP&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;D:\ProgramData\scoop&amp;#39;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# 先添加用户级别的环境变量 SCOOP&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;no&#34;&gt;environment&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]::&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;setEnvironmentVariable&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;SCOOP&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$env:SCOOP&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;User&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;安装scoop&#34;&gt;安装scoop&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# 然后下载安装 Scoop （如果使用默认安装路径则直接运行下面的命令）&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;iex &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;new-object&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;net&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;webclient&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;).&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;downloadstring&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;https://get.scoop.sh&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# 或者使用下面的命令安装：&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;iwr &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;-useb&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;get&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;scoop&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;sh&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;iex
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;配置全局安装目录&#34;&gt;配置全局安装目录&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;$env:SCOOP_GLOBAL&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;D:\ProgramData\globalapps&amp;#39;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;no&#34;&gt;environment&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]::&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;setEnvironmentVariable&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;SCOOP_GLOBAL&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$env:SCOOP_GLOBAL&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;Machine&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;</content>
-            
-            
-            
-                
-                
-                
-                    
-                    
-                    
-                
-            
-            
-            
-                
-                    
-                        
-                            
-                            
-                            
-                                <category scheme="https://blog.etamin.xyz/categories/%E6%95%99%E7%A8%8B/" term="教程" label="教程" />
-                            
-                        
-                    
-                
-                    
-                        
-                            
-                            
-                            
-                                <category scheme="https://blog.etamin.xyz/tags/windows/" term="windows" label="windows" />
-                            
-                        
-                    
-                
-            
-        </entry>
-    
-        <entry>
-            <title type="text">androidkey</title>
-            <link rel="alternate" type="text/html" href="https://blog.etamin.xyz/posts/androidkey/" />
-            <id>https://blog.etamin.xyz/posts/androidkey/</id>
-            <updated>2023-05-10T13:09:33&#43;08:00</updated>
-            <published>2023-05-10T12:50:26&#43;08:00</published>
-            <author>
-                    <name>Ling Yu</name>
-                    <uri>https://blog.etamin.xyz/</uri>
-                    <email>yulingsc@outlook.com</email>
-                    </author>
-            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">1.jks 转 keystore 先生成.p12 文件，用 p12 生成 keystore。 keytool -importkeystore -srckeystore targe.jks -srcstoretype JKS -deststoretype PKCS12 -destkeystore targe.p12 keytool -v -importkeystore -srckeystore targe.p12 -srcstoretype……</summary>
-            
-                <content type="html">&lt;p&gt;1.jks 转 keystore
-先生成.p12 文件，用 p12 生成 keystore。
-keytool -importkeystore -srckeystore targe.jks -srcstoretype JKS -deststoretype PKCS12 -destkeystore targe.p12
-keytool -v -importkeystore -srckeystore targe.p12 -srcstoretype PKCS12 -destkeystore targe.keystore -deststoretype JKS
-keytool -importkeystore -srckeystore androidkey.keystore -destkeystore androidkey.keystore -deststoretype pkcs12&lt;/p&gt;
-&lt;p&gt;2.keystore 转 jks
-keytool -importkeystore -srckeystore targe.keystore -srcstoretype JKS -deststoretype PKCS12 -destkeystore targe.p12
-keytool -v -importkeystore -srckeystore targe.p12 -srcstoretype PKCS12 -destkeystore targe.jks -deststoretype JKS&lt;/p&gt;
-</content>
-            
-            
-            
-                
-                
-                
-                    
-                    
-                    
-                        
-                            <category scheme="https://blog.etamin.xyz/posts/" term="posts\" label="posts\" />
-                        
-                    
-                
-            
-            
-            
-                
-                    
-                        
-                            
-                            
-                            
-                                <category scheme="https://blog.etamin.xyz/categories/%E6%95%99%E7%A8%8B/" term="教程" label="教程" />
-                            
-                        
-                    
-                
-                    
-                        
-                            
-                            
-                            
-                                <category scheme="https://blog.etamin.xyz/tags/android/" term="android" label="android" />
-                            
-                        
-                    
-                
-            
-        </entry>
-    
-        <entry>
-            <title type="text">exe文件签名</title>
-            <link rel="alternate" type="text/html" href="https://blog.etamin.xyz/posts/windows/exe%E6%96%87%E4%BB%B6%E7%AD%BE%E5%90%8D/" />
-            <id>https://blog.etamin.xyz/posts/windows/exe%E6%96%87%E4%BB%B6%E7%AD%BE%E5%90%8D/</id>
-            <updated>2023-05-10T12:51:34&#43;08:00</updated>
-            <published>2023-05-10T12:50:26&#43;08:00</published>
-            <author>
-                    <name>Ling Yu</name>
-                    <uri>https://blog.etamin.xyz/</uri>
-                    <email>yulingsc@outlook.com</email>
-                    </author>
-            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">参考 1 2 3 4 5 6 7 8 9 10 New-SelfSignedCertificate -Type Custom -Subject &amp;#34;CN=Ling Yu, O=None, C=CN, L=, S=&amp;#34; -KeyUsage DigitalSignature -FriendlyName &amp;#34;MailTool&amp;#34; -CertStoreLocation &amp;#34;Cert:\CurrentUser\My&amp;#34; -TextExtension @(&amp;#34;2.5.29.37={text}1.3.6.1.5.5.7.3.3&amp;#34;, &amp;#34;2.5.29.19={text}&amp;#34;) -NotAfter (Get-Date).AddYears(10) # 会显示Thumb……</summary>
-            
-                <content type="html">&lt;p&gt;&lt;a href=&#34;https://learn.microsoft.com/zh-cn/powershell/module/pki/new-selfsignedcertificate?view=windowsserver2019-ps&#34;&gt;参考&lt;/a&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;New-SelfSignedCertificate -Type Custom -Subject &lt;span class=&#34;s2&#34;&gt;&amp;#34;CN=Ling Yu, O=None, C=CN, L=, S=&amp;#34;&lt;/span&gt; -KeyUsage DigitalSignature -FriendlyName &lt;span class=&#34;s2&#34;&gt;&amp;#34;MailTool&amp;#34;&lt;/span&gt; -CertStoreLocation &lt;span class=&#34;s2&#34;&gt;&amp;#34;Cert:\CurrentUser\My&amp;#34;&lt;/span&gt; -TextExtension @&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;2.5.29.37={text}1.3.6.1.5.5.7.3.3&amp;#34;&lt;/span&gt;, &lt;span class=&#34;s2&#34;&gt;&amp;#34;2.5.29.19={text}&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; -NotAfter &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;Get-Date&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;.AddYears&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;10&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;# 会显示Thumbprint&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 设置密码&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;$password&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; ConvertTo-SecureString -String &lt;span class=&#34;m&#34;&gt;928963415&lt;/span&gt; -Force -AsPlainText
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 导出证书&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Export-PfxCertificate -cert &lt;span class=&#34;s2&#34;&gt;&amp;#34;Cert:\CurrentUser\My\&amp;lt;Thumbprint&amp;gt;&amp;#34;&lt;/span&gt; -FilePath app.pfx -Password &lt;span class=&#34;nv&#34;&gt;$password&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 签名&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;signtool sign /f test.pfx /fd SHA256 /p &lt;span class=&#34;nv&#34;&gt;$password&lt;/span&gt; /t http://timestamp.digicert.com /v &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;lt;obj&amp;gt;.exe&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;</content>
-            
-            
-            
-                
-                
-                
-                    
-                    
-                    
-                
-            
-            
-            
-                
-                    
-                        
-                            
-                            
-                            
-                                <category scheme="https://blog.etamin.xyz/categories/%E6%95%99%E7%A8%8B/" term="教程" label="教程" />
-                            
-                        
-                    
-                
-                    
-                        
-                            
-                            
-                            
-                                <category scheme="https://blog.etamin.xyz/tags/windows/" term="windows" label="windows" />
-                            
-                        
-                            
-                            
-                            
-                                <category scheme="https://blog.etamin.xyz/tags/exe/" term="exe" label="exe" />
-                            
-                        
-                    
-                
-            
-        </entry>
-    
-        <entry>
-            <title type="text">ffmpeg</title>
-            <link rel="alternate" type="text/html" href="https://blog.etamin.xyz/posts/app/ffmpeg/" />
-            <id>https://blog.etamin.xyz/posts/app/ffmpeg/</id>
-            <updated>2023-05-10T13:03:53&#43;08:00</updated>
-            <published>2023-05-10T12:50:26&#43;08:00</published>
-            <author>
-                    <name>Ling Yu</name>
-                    <uri>https://blog.etamin.xyz/</uri>
-                    <email>yulingsc@outlook.com</email>
-                    </author>
-            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">FFmpeg安装使用指南 1.安装 1.1 Windows下安装FFmpeg 2.使用 2.1 识别视频……</summary>
-            
-                <content type="html">&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://blog.etamin.xyz/posts/app/ffmpeg/#ffmpeg%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97&#34;&gt;FFmpeg安装使用指南&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://blog.etamin.xyz/posts/app/ffmpeg/#1%E5%AE%89%E8%A3%85&#34;&gt;1.安装&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://blog.etamin.xyz/posts/app/ffmpeg/#11-windows%E4%B8%8B%E5%AE%89%E8%A3%85ffmpeg&#34;&gt;1.1 Windows下安装FFmpeg&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://blog.etamin.xyz/posts/app/ffmpeg/#2%E4%BD%BF%E7%94%A8&#34;&gt;2.使用&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://blog.etamin.xyz/posts/app/ffmpeg/#21-%E8%AF%86%E5%88%AB%E8%A7%86%E9%A2%91%E4%BF%A1%E6%81%AF%E9%80%9A%E8%BF%87ffprobe%E5%91%BD%E4%BB%A4%E8%AF%86%E5%88%AB%E5%B9%B6%E8%BE%93%E5%87%BA%E8%A7%86%E9%A2%91%E4%BF%A1%E6%81%AF&#34;&gt;2.1 识别视频信息,通过ffprobe命令识别并输出视频信息&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://blog.etamin.xyz/posts/app/ffmpeg/#22-%E8%A7%86%E9%A2%91%E5%8E%8B%E7%BC%A9&#34;&gt;2.2 视频压缩&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://blog.etamin.xyz/posts/app/ffmpeg/#ffmpeg%E6%B7%BB%E5%8A%A0%E5%AD%97%E5%B9%95%E6%96%87%E4%BB%B6&#34;&gt;ffmpeg添加字幕文件&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://blog.etamin.xyz/posts/app/ffmpeg/#1-%E5%AD%97%E5%B9%95%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2&#34;&gt;1 字幕格式转换&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- /code_chunk_output --&gt;
-&lt;h1 id=&#34;ffmpeg安装使用指南&#34;&gt;FFmpeg安装使用指南&lt;/h1&gt;
-&lt;h2 id=&#34;1安装&#34;&gt;1.安装&lt;/h2&gt;
-&lt;h3 id=&#34;11-windows下安装ffmpeg&#34;&gt;1.1 Windows下安装FFmpeg&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;访问&lt;a href=&#34;https://ffmpeg.org/&#34;&gt;FFmpeg&lt;/a&gt;guan官网下载，完成安装&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;2使用&#34;&gt;2.使用&lt;/h2&gt;
-&lt;h3 id=&#34;21-识别视频信息通过ffprobe命令识别并输出视频信息&#34;&gt;2.1 识别视频信息,通过ffprobe命令识别并输出视频信息&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gp&#34;&gt;$&lt;/span&gt; ffprobe -v error -show_streams -print_format json &lt;span class=&#34;s1&#34;&gt;&amp;#39;xxx.mp4&amp;#39;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;22-视频压缩&#34;&gt;2.2 视频压缩&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gp&#34;&gt;$&lt;/span&gt; ffmpeg -i &lt;span class=&#34;s1&#34;&gt;&amp;#39;xxx.mp4&amp;#39;&lt;/span&gt; -s 1920x1080 -b:v 8500k &lt;span class=&#34;s1&#34;&gt;&amp;#39;out.mp4&amp;#39;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;blockquote&gt;
-&lt;p&gt;注意：&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;我们主要关注的部分: -s (输出视频分辨率，尺寸) ； -b（输出视频的清晰度）&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;-i ：后面跟着一个xxx.mp4，是我们即将要压缩的源视频文件当然也可以用绝对路径或者相对路径。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;-s ：后面写的是1920x1080，对应的是我们目标视频文件分辨率，注意中间的是字母 x（艾克斯），不是乘号（✖）。一般分辨率可以按照自己想法设置。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;-b:v : 码率，数据传输时单位时间传送的数据位数，这个参数影响着视频的清晰度，我这里使用的分辨率是1920x1080，码率设置为 8500k，具体大小主要根据所选视频的分辨率自行选择, 参考这位大佬的分辨率与码率的对照表 ，然后可以根据自己的需要调整自己的码率大小 。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;有一些没有用到的参数：&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;-r : 视频每秒的帧数，虽然说减少每秒视频的帧数也可以起到压缩视频的大小，但我不用他的原因是因为在一些切换画面比较快速和频繁的情况下，减少帧数会导致视频卡顿的视觉感受，一般我不会少于25帧/s。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;-qscale: 质量为基础的VBR，网上说取值0.01-255。（但好像导出默认就是VBR，我试着调节了一下参数，对文件大小影响并不是很大，所以也没有去选择这一个，还是用的 -b:v 这个参数）&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;-sameq 使用和源同样的质量（没试过，用不到）&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;示例：1920x1080 25帧/s的视频压缩，使用的命令：&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gp&#34;&gt;$&lt;/span&gt; ffmpeg -i &lt;span class=&#34;s1&#34;&gt;&amp;#39;xxx.mp4&amp;#39;&lt;/span&gt; -r &lt;span class=&#34;m&#34;&gt;25&lt;/span&gt; -s 1920x1080 -b:v 8500k &lt;span class=&#34;s1&#34;&gt;&amp;#39;x.mp4&amp;#39;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;ffmpeg添加字幕文件&#34;&gt;ffmpeg添加字幕文件&lt;/h3&gt;
-&lt;h2 id=&#34;1-字幕格式转换&#34;&gt;1 字幕格式转换&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;go&#34;&gt;ffmpeg -i &amp;#34;test_x.srt&amp;#34; &amp;#34;test_x.vtt&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;go&#34;&gt;ffmpeg -i &amp;#34;test_x.srt&amp;#39; &amp;#39;test_x.ass&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;3.1. 查询命令
-查询所下载的ffmpeg是否支持cuda，若是不支持（我下载的是支持的），那从新下载一下或者自行编译。bash&lt;/p&gt;
-&lt;p&gt;ffmpeg -hwaccels&lt;/p&gt;
-&lt;p&gt;查看支持 cuda 的编码器
-执行 ffmpeg -codecs | findstr cuvid or ffmpeg -codecs | grep cuvid(linux)
-所有带有&amp;quot;cuvid&amp;quot;或&amp;quot;nvenc&amp;quot;的，都是CUDA提供的GPU编解码器&lt;/p&gt;
-&lt;p&gt;开始转码
-执行ffmpeg -i &lt;input&gt; -vcodec h264_nvenc &lt;output&gt;
--vcodec 表示指定 视频编码器，只要指定了支持 GPU 加速的编码器，FFMPEG 就会自动使用 GPU&lt;/p&gt;
-&lt;p&gt;使用GPU进行视频转码
-用GPU进行转码的命令和软转码命令不太一样，CPU转码的时候，我们可以依赖ffmpeg识别输入视频的编码格式并选择对应的解码器，但ffmpeg只会自动选择CPU解码器，要让ffmpeg使用GPU解码器，必须先用ffprobe识别出输入视频的编码格式，然后在命令行中指定对应的GPU解码器。&lt;/p&gt;
-&lt;p&gt;例如，将h264编码的源视频转码为指定尺寸和码率的h264编码视频：&lt;/p&gt;
-&lt;p&gt;ffmpeg -hwaccel cuvid -c:v h264_cuvid -i &lt;input&gt; -c:v h264_nvenc -b:v 2048k -vf scale_npp=1280:-1 -y &lt;output&gt;
--hwaccel cuvid：指定使用cuvid硬件加速
--c:v h264_cuvid：使用h264_cuvid进行视频解码
--c:v h264_nvenc：使用h264_nvenc进行视频编码
--vf scale_npp=1280:-1：指定输出视频的宽高，注意，这里和软解码时使用的-vf scale=x:x不一样
-转码期间使用nvidia-smi查看显卡状态，能够看到ffmpeg确实是在使用GPU进行转码：
-作者：kelgon
-链接：https://www.jianshu.com/p/59da3d350488&lt;/p&gt;
-&lt;p&gt;ffmpeg并不具备自动向不同GPU分配转码任务的能力，但经过一番调查后，发现可以通过-hwaccel_device参数指定转码任务使用的GPU！&lt;/p&gt;
-&lt;p&gt;向不同GPU提交转码任务
-ffmpeg -hwaccel cuvid -hwaccel_device 0 -c:v h264_cuvid -i &lt;input&gt; -c:v h264_nvenc -b:v 2048k -vf scale_npp=1280:-1 -y &lt;output&gt;
-ffmpeg -hwaccel cuvid -hwaccel_device 1 -c:v h264_cuvid -i &lt;input&gt; -c:v h264_nvenc -b:v 2048k -vf scale_npp=1280:-1 -y &lt;output&gt;
--hwaccel_device N：指定某颗GPU执行转码任务，N为数字&lt;/p&gt;
-&lt;h1 id=&#34;ffmpeg添加字幕文件-1&#34;&gt;ffmpeg添加字幕文件&lt;/h1&gt;
-&lt;h2 id=&#34;1-字幕格式转换-1&#34;&gt;1 字幕格式转换&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;go&#34;&gt;ffmpeg -i &amp;#34;test_x.srt&amp;#34; &amp;#34;test_x.vtt&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;go&#34;&gt;ffmpeg -i &amp;#34;test_x.srt&amp;#39; &amp;#39;test_x.ass&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;2-添加软字幕&#34;&gt;2 添加软字幕&lt;/h2&gt;
-&lt;h3 id=&#34;21-添加软字幕&#34;&gt;2.1 添加软字幕&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;go&#34;&gt;ffmpeg -i &amp;#39;xxx.mkv&amp;#39; -vf subtitles=&amp;#39;xxx.srt&amp;#39; -c copy output.mkv
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;blockquote&gt;
-&lt;p&gt;tips：软字幕只有部分容器格式比如(mkv)才支持，MP4/MOV等不支持，而且也只有部分播放器支持软字&amp;gt;幕或者外挂字幕(如VLC播放器)&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&#34;22-添加硬字幕&#34;&gt;2.2 添加硬字幕&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;go&#34;&gt;ffmpeg -i &amp;#39;xx.mp4&amp;#39; -vf subtitles=&amp;#39;xx.srt&amp;#39; output.mp4 //有解码过程
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;添加字幕
-理论上这样就ok了，可以加src lrc ass等字幕文件&lt;/p&gt;
-&lt;p&gt;但是，实际运用当中，下面这种就会报错&lt;/p&gt;
-&lt;p&gt;ffmpeg -i input.mp4 -vf subtitles= D:/字幕文件/subtitle.srt output.mp4
-因为路径中出现了盘符 即D:这种，所以正确(能用)的写法应该是下面这样&lt;/p&gt;
-&lt;p&gt;ffmpeg -i input.mp4 -vf subtitles= /字幕文件/subtitle.srt output.mp4
-但这种写法也只是勉强能用 需要字幕文件在同一硬盘中&lt;/p&gt;
-&lt;p&gt;所以最终方案如下&lt;/p&gt;
-&lt;p&gt;ffmpeg  -i  D:\项目\视频处理\mix\拼接\侧脸-于果.mp4 -i F:\音乐mv\歌曲\侧脸-于果.mp3 -vf subtitles=&#39;F:/音乐mv/歌曲/侧脸-于果.lrc&#39; -y D:\项目\视频处理\mix\成品\侧脸-于果.mp4
-可以看到视频路径 音频路径都是正常的路径 但是字幕路径需要是正斜杠/,而且必须用单引号引起来，而且要用反斜杠转义\&lt;/p&gt;
-&lt;p&gt;这个命令在cmd下就可以正常跑了，但在其他语音环境下，如python 需要再加一层反斜杠，即&lt;/p&gt;
-&lt;p&gt;cmdLine=&amp;quot;ffmpeg  -i  D:\项目\视频处理\mix\拼接\侧脸-于果.mp4 -i F:\音乐mv\歌曲\侧脸-于果.mp3 -vf subtitles=\&#39;F:/音乐mv/歌曲/侧脸-于果.lrc\&#39; -y D:\项目\视频处理\mix/成品/侧脸-于果.mp4&amp;quot;
-subprocess.call(cmdLine, shell=True)&lt;/p&gt;
-</content>
-            
-            
-            
-                
-                
-                
-                    
-                    
-                    
-                
-            
-            
-            
-                
-                    
-                
-                    
-                        
-                            
-                            
-                            
-                                <category scheme="https://blog.etamin.xyz/tags/ffmpeg/" term="ffmpeg" label="ffmpeg" />
-                            
-                        
-                            
-                            
-                            
-                                <category scheme="https://blog.etamin.xyz/tags/cuda/" term="cuda" label="cuda" />
-                            
-                        
-                    
-                
-            
-        </entry>
-    
-        <entry>
-            <title type="text">kms</title>
-            <link rel="alternate" type="text/html" href="https://blog.etamin.xyz/posts/windows/kms/" />
-            <id>https://blog.etamin.xyz/posts/windows/kms/</id>
-            <updated>2023-05-10T12:52:08&#43;08:00</updated>
-            <published>2023-05-10T12:50:26&#43;08:00</published>
-            <author>
-                    <name>Ling Yu</name>
-                    <uri>https://blog.etamin.xyz/</uri>
-                    <email>yulingsc@outlook.com</email>
-                    </author>
-            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">kms服务器 德国 http://kms9.MSGuides.com 美国 https://kms.loli.beer/ https://kms.luochenzhimu.com/ office激活指南 1. Office Tool Plus 激活 cmd激活 1 2 3 4 5 6 7 8……</summary>
-            
-                <content type="html">&lt;h2 id=&#34;kms服务器&#34;&gt;kms服务器&lt;/h2&gt;
-&lt;p&gt;德国 &lt;a href=&#34;http://kms9.MSGuides.com&#34;&gt;http://kms9.MSGuides.com&lt;/a&gt;
-美国 &lt;a href=&#34;https://kms.loli.beer/&#34;&gt;https://kms.loli.beer/&lt;/a&gt;
-&lt;a href=&#34;https://kms.luochenzhimu.com/&#34;&gt;https://kms.luochenzhimu.com/&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;office激活指南&#34;&gt;office激活指南&lt;/h2&gt;
-&lt;h3 id=&#34;1-office-tool-plus-激活&#34;&gt;1. Office Tool Plus 激活&lt;/h3&gt;
-&lt;h3 id=&#34;cmd激活&#34;&gt;cmd激活&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;cd &lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;C:\Program Files\Microsoft Office\Office16&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# cd &amp;#34;C:\Program Files (x86)\Microsoft Office\Office16&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;cscript&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ospp&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;vbs&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;inpkey&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;XQNVK&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;8JYDB-WJ9W3-YJ8YR-WFG99&lt;/span&gt; &lt;span class=&#34;c&#34;&gt;# 安装/替换现有的产品密钥&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;cscript&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ospp&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;vbs&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;sethst&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;kms&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;0t&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;net&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;cn&lt;/span&gt;  &lt;span class=&#34;c&#34;&gt;# 设置KMS主机名&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;cscript&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ospp&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;vbs&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;setprt&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;1688&lt;/span&gt; &lt;span class=&#34;c&#34;&gt;# 设置KMS主机端口&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;cscript&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ospp&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;vbs&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;act&lt;/span&gt;  &lt;span class=&#34;c&#34;&gt;# 连接到KMS服务器进行激活&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;cscript&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ospp&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;vbs&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;dstatus&lt;/span&gt;  &lt;span class=&#34;c&#34;&gt;# 显示当前已安装产品密钥的许可证信息&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;blockquote&gt;
-&lt;p&gt;激活失败，请确认&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;是否以管理员身份运行的cmd&lt;/li&gt;
-&lt;li&gt;office2021的版本是否是vl版，如果是零售版转换到VL版&lt;/li&gt;
-&lt;li&gt;office365不支持KMS激活&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;office2021零售版转VL版命令&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;cd &lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;C:\Program Files\Microsoft Office\Office16&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;f&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;%&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;x&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;dir /b ..\root\Licenses16\ProPlus2021VL_KMS*.xrm-ms&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;do&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;cscript&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ospp&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;vbs&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;inslic&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;..\root\Licenses16\%x&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style=&#34;text-align:center&#34;&gt;Office2021&lt;/th&gt;
-&lt;th style=&#34;text-align:center&#34;&gt;各版本KMS序列号&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;Product&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;GVLK&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;Office LTSC 专业增强版 2021&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;FXYTK-NJJ8C-GB6DW-3DYQT-6F7TH&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;Office LTSC 标准版 2021&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;KDX7X-BNVR8-TXXGX-4Q7Y8-78VT3&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;Project Professional 2021 年 1 月&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;FTNWT-C6WBT-8HMGF-K9PRX-QV9H8&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;Project Standard 2021&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;J2JDC-NJCYY-9RGQ4-YXWMH-T3D4T&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;VisioLTSC Professional 2021&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;KNH8D-FGHT4-T8RK3-CTDYJ-K2HT4&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;VisioLTSC Standard 2021&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;MJVNY-BYWPY-CWV6J-2RKRT-4M8QG&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;Access LTSC 2021&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;WM8YG-YNGDD-4JHDC-PG3F4-FC4T4&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;ExcelLTSC 2021&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;NWG3X-87C9K-TC7YY-BC2G7-G6RVC&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;OutlookLTSC 2021&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;C9FM6-3N72F-GFJXB-TM3V9-T86R9&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;PowerPointLTSC 2021&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;TY7XF-NFRBR-KJ44C-G83KF-GX27K&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;PublisherLTSC 2021&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;2MW9D-N4BXM-9VBPG-Q7W6M-KFBGQ&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;Skype for BusinessLTSC 2021&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;HWCXN-K3WBT-WJBKY-R8BD9-XK29P&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;Word LTSC 2021&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;TN8H9-M34D3-Y64V9-TR72V-X79KV&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id=&#34;清除激活信息&#34;&gt;清除激活信息&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;cd &lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;C:\Program Files\Microsoft Office\Office16&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;cscript&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ospp&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;vbs&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;dstatus&lt;/span&gt; &lt;span class=&#34;c&#34;&gt;# 回车，查看激活秘钥秘钥后5位&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;cscript&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ospp&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;vbs&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;unpkey&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;XXXXX&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;  &lt;span class=&#34;c&#34;&gt;# 回车（X代表秘钥后5位）&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;cscript&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ospp&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;vbs&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;remhst&lt;/span&gt; &lt;span class=&#34;c&#34;&gt;# 回车，刷新激活状态&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;cscript&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ospp&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;vbs&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;dstatus&lt;/span&gt; &lt;span class=&#34;c&#34;&gt;# 回车，重新查看激活状态&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;blockquote&gt;
-&lt;p&gt;若有多个秘钥需要卸载可重复上述步骤&lt;/p&gt;
-&lt;/blockquote&gt;
-</content>
-            
-            
-            
-                
-                
-                
-                    
-                    
-                    
-                
-            
-            
-            
-                
-                    
-                        
-                            
-                            
-                            
-                                <category scheme="https://blog.etamin.xyz/categories/%E6%95%99%E7%A8%8B/" term="教程" label="教程" />
-                            
-                        
-                    
-                
-                    
-                        
-                            
-                            
-                            
-                                <category scheme="https://blog.etamin.xyz/tags/kms/" term="kms" label="kms" />
-                            
-                        
-                            
-                            
-                            
-                                <category scheme="https://blog.etamin.xyz/tags/windows/" term="windows" label="windows" />
-                            
-                        
-                            
-                            
-                            
-                                <category scheme="https://blog.etamin.xyz/tags/office/" term="office" label="office" />
-                            
-                        
-                    
-                
-            
-        </entry>
-    
-        <entry>
-            <title type="text">mkcert</title>
-            <link rel="alternate" type="text/html" href="https://blog.etamin.xyz/posts/app/mkcert/" />
-            <id>https://blog.etamin.xyz/posts/app/mkcert/</id>
-            <updated>2023-05-10T13:07:28&#43;08:00</updated>
-            <published>2023-05-10T12:50:26&#43;08:00</published>
-            <author>
-                    <name>Ling Yu</name>
-                    <uri>https://blog.etamin.xyz/</uri>
-                    <email>yulingsc@outlook.com</email>
-                    </author>
-            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">mkcert mkcert -isntall mkcert 127.0.0.1 localhost ::1 openssl pkcs12 -export -inkey ./127.0.0.1-key.pem -in ./127.0.0.1.pem -name 127.0.0.1 -out 127.0.0.1.p12 keytool -importkeystore -srckeystore 127.0.0.1.p12 -srcstoretype pkcs12 -destkeystore 127.0.0.1.jks</summary>
-            
-                <content type="html">&lt;h1 id=&#34;mkcert&#34;&gt;mkcert&lt;/h1&gt;
-&lt;p&gt;mkcert -isntall
-mkcert 127.0.0.1 localhost ::1
-openssl pkcs12 -export -inkey ./127.0.0.1-key.pem -in ./127.0.0.1.pem -name 127.0.0.1 -out 127.0.0.1.p12
-keytool -importkeystore -srckeystore 127.0.0.1.p12 -srcstoretype pkcs12 -destkeystore 127.0.0.1.jks&lt;/p&gt;
-</content>
-            
-            
-            
-                
-                
-                
-                    
-                    
-                    
-                
-            
-            
-            
-                
-                    
-                        
-                            
-                            
-                            
-                                <category scheme="https://blog.etamin.xyz/categories/%E6%95%99%E7%A8%8B/" term="教程" label="教程" />
-                            
-                        
-                    
-                
-                    
-                        
-                            
-                            
-                            
-                                <category scheme="https://blog.etamin.xyz/tags/mkcert/" term="mkcert" label="mkcert" />
-                            
-                        
-                            
-                            
-                            
-                                <category scheme="https://blog.etamin.xyz/tags/https/" term="https" label="https" />
-                            
-                        
-                            
-                            
-                            
-                                <category scheme="https://blog.etamin.xyz/tags/ssl/" term="ssl" label="ssl" />
-                            
-                        
-                            
-                            
-                            
-                                <category scheme="https://blog.etamin.xyz/tags/tls/" term="tls" label="tls" />
-                            
-                        
-                            
-                            
-                            
-                                <category scheme="https://blog.etamin.xyz/tags/%E8%AF%81%E4%B9%A6/" term="证书" label="证书" />
                             
                         
                     
