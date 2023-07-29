@@ -23,13 +23,13 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
         
-        <lastBuildDate>Sat, 29 Jul 2023 15:20:18 &#43;0800</lastBuildDate>
+        <lastBuildDate>Sat, 29 Jul 2023 15:27:54 &#43;0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://blog.etamin.xyz/rss.xml" />
         
         
             <item>
-                <title>Arch Linux</title>
+                <title>centos-stream</title>
                 <link>https://blog.etamin.xyz/posts/linux/centos-stream/</link>
                 <guid isPermaLink="true">https://blog.etamin.xyz/posts/linux/centos-stream/</guid>
                 <pubDate>Sat, 29 Jul 2023 13:14:36 &#43;0800</pubDate>

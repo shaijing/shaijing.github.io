@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">The Rain Pavilion</title>
     <subtitle type="html">MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</subtitle>
-    <updated>2023-07-29T15:20:18&#43;08:00</updated>
+    <updated>2023-07-29T15:27:54&#43;08:00</updated>
     <id>https://blog.etamin.xyz/</id>
     <link rel="alternate" type="text/html" href="https://blog.etamin.xyz/" />
     <link rel="self" type="application/atom&#43;xml" href="https://blog.etamin.xyz/atom.xml" />
@@ -17,10 +17,10 @@
     <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights>
     <generator uri="https://gohugo.io/" version="0.115.4">Hugo</generator>
         <entry>
-            <title type="text">Arch Linux</title>
+            <title type="text">centos-stream</title>
             <link rel="alternate" type="text/html" href="https://blog.etamin.xyz/posts/linux/centos-stream/" />
             <id>https://blog.etamin.xyz/posts/linux/centos-stream/</id>
-            <updated>2023-07-29T09:10:06&#43;08:00</updated>
+            <updated>2023-07-29T15:27:40&#43;08:00</updated>
             <published>2023-07-29T13:14:36&#43;08:00</published>
             <author>
                     <name>Ling Yu</name>
