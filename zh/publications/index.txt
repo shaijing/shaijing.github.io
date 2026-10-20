@@ -1,0 +1,86 @@
+1:"$Sreact.fragment"
+8:I[7150,[],""]
+:HL["/_next/static/css/3f67f7617044ecc3.css","style"]
+2:T822,
+    try {
+      const cfg = {"enabled":true,"locales":["zh","en"],"defaultLocale":"en","mode":"auto","fixedLocale":"en","persist":true,"switcher":true,"labels":{"zh":"中文","en":"English"}};
+      const basePath = "";
+      const storageKey = 'locale-storage';
+      const normalize = (value) => typeof value === 'string' ? value.trim().replace('_', '-').toLowerCase() : '';
+      const matchLocale = (candidate) => {
+        const normalized = normalize(candidate);
+        if (!normalized) return null;
+        if (cfg.locales.includes(normalized)) return normalized;
+        const language = normalized.split('-')[0];
+        if (cfg.locales.includes(language)) return language;
+        return null;
+      };
+
+      let resolved = null;
+
+      if (!cfg.enabled) {
+        resolved = cfg.defaultLocale;
+      } else if (cfg.persist) {
+        resolved = matchLocale(localStorage.getItem(storageKey));
+      }
+
+      if (!resolved) {
+        if (cfg.mode === 'fixed') {
+          resolved = cfg.fixedLocale;
+        } else {
+          resolved = matchLocale(navigator.language);
+        }
+      }
+
+      if (!resolved) {
+        resolved = cfg.defaultLocale;
+      }
+
+      const pathname = location.pathname.startsWith(basePath + '/')
+        ? location.pathname.slice(basePath.length)
+        : location.pathname;
+      const firstSegment = pathname.split('/').filter(Boolean)[0];
+      const routeLocale = firstSegment !== cfg.defaultLocale && cfg.locales.includes(firstSegment)
+        ? firstSegment : null;
+      if (routeLocale) {
+        resolved = routeLocale;
+      } else if (resolved !== cfg.defaultLocale) {
+        location.replace(basePath + '/' + resolved + pathname + location.search + location.hash);
+      }
+
+      const root = document.documentElement;
+      root.lang = resolved;
+      root.setAttribute('data-locale', resolved);
+
+      if (cfg.persist) {
+        localStorage.setItem(storageKey, resolved);
+      }
+    } catch (e) {
+      const root = document.documentElement;
+      root.lang = 'en';
+      root.setAttribute('data-locale', 'en');
+    }
+  0:{"P":null,"b":"4FUoARmB-c-eU_CcX8FaT","p":"","c":["","zh","publications",""],"i":false,"f":[[["",{"children":[["slug","zh","d"],{"children":[["page","publications","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/3f67f7617044ecc3.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"scroll-smooth","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"icon","href":"/favicon.svg","type":"image/svg+xml"}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              try {\n                const theme = localStorage.getItem('theme-storage');\n                const parsed = theme ? JSON.parse(theme) : null;\n                const setting = parsed?.state?.theme || 'system';\n                const prefersDark = typeof window !== 'undefined' && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;\n                const effective = setting === 'dark' ? 'dark' : (setting === 'light' ? 'light' : (prefersDark ? 'dark' : 'light'));\n                var root = document.documentElement;\n                root.classList.add(effective);\n                root.setAttribute('data-theme', effective);\n              } catch (e) {\n                var root = document.documentElement;\n                root.classList.add('light');\n                root.setAttribute('data-theme', 'light');\n              }\n            "}}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}]]}],"$L3"]}]]}],{"children":[["slug","zh","d"],"$L4",{"children":[["page","publications","d"],"$L5",{"children":["__PAGE__","$L6",{},null,false]},null,false]},null,false]},null,false],"$L7",false]],"m":"$undefined","G":["$8",[]],"s":false,"S":true}
+9:I[7558,["924","static/chunks/924-d64870bd2ef734d7.js","619","static/chunks/619-9168df9c2a29b74b.js","929","static/chunks/929-07483b770643d260.js","177","static/chunks/app/layout-28d780d01a29c7c8.js"],"ThemeProvider"]
+a:I[611,["924","static/chunks/924-d64870bd2ef734d7.js","619","static/chunks/619-9168df9c2a29b74b.js","929","static/chunks/929-07483b770643d260.js","177","static/chunks/app/layout-28d780d01a29c7c8.js"],"LocaleProvider"]
+b:I[552,["924","static/chunks/924-d64870bd2ef734d7.js","619","static/chunks/619-9168df9c2a29b74b.js","929","static/chunks/929-07483b770643d260.js","177","static/chunks/app/layout-28d780d01a29c7c8.js"],"default"]
+c:I[9766,[],""]
+d:I[8924,[],""]
+e:I[7923,["924","static/chunks/924-d64870bd2ef734d7.js","619","static/chunks/619-9168df9c2a29b74b.js","929","static/chunks/929-07483b770643d260.js","177","static/chunks/app/layout-28d780d01a29c7c8.js"],"default"]
+10:I[4431,[],"OutletBoundary"]
+12:I[5278,[],"AsyncMetadataOutlet"]
+14:I[4431,[],"ViewportBoundary"]
+16:I[4431,[],"MetadataBoundary"]
+17:"$Sreact.suspense"
+3:["$","body",null,{"className":"font-sans antialiased","children":["$","$L9",null,{"children":["$","$La",null,{"config":{"enabled":true,"locales":["zh","en"],"defaultLocale":"en","mode":"auto","fixedLocale":"en","persist":true,"switcher":true,"labels":{"zh":"中文","en":"English"}},"children":[["$","$Lb",null,{"items":[{"title":"About","type":"page","target":"about","href":"/"},{"title":"Publications","type":"page","target":"publications","href":"/publications"},{"title":"Awards","type":"page","target":"awards","href":"/awards"},{"title":"Services","type":"page","target":"services","href":"/services"},{"title":"CV","type":"page","target":"cv","href":"/cv"}],"siteTitle":"Ling Yu","enableOnePageMode":false,"i18n":"$3:props:children:props:children:props:config","itemsByLocale":{"zh":[{"title":"关于我","type":"page","target":"about","href":"/"},{"title":"论文","type":"page","target":"publications","href":"/publications"},{"title":"奖项","type":"page","target":"awards","href":"/awards"},{"title":"服务","type":"page","target":"services","href":"/services"},{"title":"简历","type":"page","target":"cv","href":"/cv"}],"en":[{"title":"About","type":"page","target":"about","href":"/"},{"title":"Publications","type":"page","target":"publications","href":"/publications"},{"title":"Awards","type":"page","target":"awards","href":"/awards"},{"title":"Services","type":"page","target":"services","href":"/services"},{"title":"CV","type":"page","target":"cv","href":"/cv"}]},"siteTitleByLocale":{"zh":"Ling Yu","en":"Ling Yu"}}],["$","main",null,{"className":"min-h-screen pt-16 lg:pt-20","children":["$","$Lc",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Ld",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","$Le",null,{"lastUpdated":"November 18, 2025","lastUpdatedByLocale":{"zh":"2025年11月18日","en":"November 18, 2025"},"defaultLocale":"en"}]]}]}]}]
+4:["$","$1","c",{"children":[null,["$","$Lc",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Ld",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+5:["$","$1","c",{"children":[null,["$","$Lc",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Ld",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+6:["$","$1","c",{"children":["$Lf",null,["$","$L10",null,{"children":["$L11",["$","$L12",null,{"promise":"$@13"}]]}]]}]
+7:["$","$1","h",{"children":[null,[["$","$L14",null,{"children":"$L15"}],null],["$","$L16",null,{"children":["$","div",null,{"hidden":true,"children":["$","$17",null,{"fallback":null,"children":"$L18"}]}]}]]}]
+19:I[5421,["924","static/chunks/924-d64870bd2ef734d7.js","557","static/chunks/557-be36edd1495f8520.js","681","static/chunks/681-2460c2bbad645157.js","106","static/chunks/app/%5Bslug%5D/%5Bpage%5D/page-9ce05aa8cdd385df.js"],"default"]
+f:["$","$L19",null,{"pageData":{"type":"publication","config":{"type":"publication","title":"论文","description":"我的研究成果。","source":"publications.bib"},"publications":[{"id":"yu2026noise","title":"Noise-Robust Learning via Fuzzy Infinite Kernel with Cross-Product","titleNodes":[{"type":"text","text":"Noise-Robust Learning via Fuzzy Infinite Kernel with Cross-Product"}],"authors":[{"name":"Ling Yu","isHighlighted":true,"isCorresponding":false,"isCoAuthor":false},{"name":"Cong Shen","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Shengyong Chen","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Xiao Zhang","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Youxi Wu","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false}],"year":2026,"type":"journal","status":"published","tags":[],"keywords":"$f:props:pageData:publications:0:tags","researchArea":"machine-learning","journal":"","conference":"","volume":"","issue":"","pages":"1-15","abstract":"","description":"","selected":true,"bibtex":"@journal{yu2026noise,\n  author = {Yu, Ling and Shen, Cong and Chen, Shengyong and Zhang, Xiao and Wu, Youxi},\n  title = {Noise-Robust Learning via Fuzzy Infinite Kernel with Cross-Product},\n  year = {2026},\n  volume = {},\n  number = {},\n  pages = {1-15}\n}"},{"id":"xu2026interactive","title":"Interactive Graph Distillation: A Mutual Information Perspective on Continuous Generalization Leaps","titleNodes":[{"type":"text","text":"Interactive Graph Distillation: A Mutual Information Perspective on Continuous Generalization Leaps"}],"authors":[{"name":"Mingwei Xu","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Yupeng Tong","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Faming Yin","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Yuxiao Li","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Ling Yu","isHighlighted":true,"isCorresponding":false,"isCoAuthor":false},{"name":"Chi Zhang","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Jiangchao Yao","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false},{"name":"Xiaofeng Cao","isHighlighted":false,"isCorresponding":false,"isCoAuthor":false}],"year":2026,"type":"conference","status":"published","tags":["Graph neural networks;Modeling;Training;Printing;Optimization;Equations;Labeling;Mutual information;Conferences;Learning (artificial intelligence);Interactive Distillation;Mutual Information;Generalization Leaps"],"keywords":"$f:props:pageData:publications:1:tags","researchArea":"neural-networks","journal":"","conference":"2026 IEEE International Conference on Pattern Recognition, Machine Vision and Artificial Intelligence (PRMVAI)","volume":"","issue":"","pages":"1-10","doi":"10.1109/PRMVAI70103.2026.11605596","abstract":"","description":"","selected":true,"bibtex":"@INPROCEEDINGS{xu2026interactive,\n  author = {Xu, Mingwei and Tong, Yupeng and Yin, Faming and Li, Yuxiao and Yu, Ling and Zhang, Chi and Yao, Jiangchao and Cao, Xiaofeng},\n  booktitle = {2026 IEEE International Conference on Pattern Recognition, Machine Vision and Artificial Intelligence (PRMVAI)},\n  title = {Interactive Graph Distillation: A Mutual Information Perspective on Continuous Generalization Leaps},\n  year = {2026},\n  volume = {},\n  number = {},\n  pages = {1-10},\n  doi = {10.1109/PRMVAI70103.2026.11605596}\n}"}]},"locale":"zh"}]
+15:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+11:null
+1a:I[622,[],"IconMark"]
+13:{"metadata":[["$","title","0",{"children":"论文 | Ling Yu"}],["$","meta","1",{"name":"description","content":"我的研究成果。"}],["$","meta","2",{"name":"author","content":"Ling Yu"}],["$","meta","3",{"name":"keywords","content":"Ling Yu,PhD,Research,Jilin University"}],["$","meta","4",{"name":"creator","content":"Ling Yu"}],["$","meta","5",{"name":"publisher","content":"Ling Yu"}],["$","meta","6",{"property":"og:title","content":"论文"}],["$","meta","7",{"property":"og:description","content":"我的研究成果。"}],["$","meta","8",{"property":"og:locale","content":"zh_CN"}],["$","meta","9",{"name":"twitter:card","content":"summary"}],["$","meta","10",{"name":"twitter:title","content":"论文"}],["$","meta","11",{"name":"twitter:description","content":"我的研究成果。"}],["$","link","12",{"rel":"icon","href":"/favicon.svg"}],["$","$L1a","13",{}]],"error":null,"digest":"$undefined"}
+18:"$13:metadata"
